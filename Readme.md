@@ -15,3 +15,9 @@
 9.5 created ApiErrors.js in utils as the wrapper function for all the errors
 9.6 created ApiResponse.js in utils as the wrapper function for all the response
 9.7 created asyncHandler.js in utils as the wrapper to handle all res , req , next
+10.1 created user.model.js and video.model.js in model folder
+10.2 installed mongoose-aggregate-paginate-v2 as a plugin for mongoose.
+10.3 installing bcrypt which helps us to encrypt the user password in database and jsonwebtoken which help us in encripting the payload.
+10.4 using a pre hook from moongoose which runs a function(which uses bcrypt) on the password to encrypt it  just before it is saved.
+10.5 added access_token_secret , refresh_token_secret, access_token_expiry, refresh_token_expiry in the dotenv file.
+10.6 created custom method for userSchema -> isPasswordCorrecr , generateAccessToken , generateRefreshToken.
